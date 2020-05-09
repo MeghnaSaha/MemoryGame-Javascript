@@ -34,7 +34,7 @@ function flipCard(){
     setTimeout(() => {
       firstCard.classList.remove("flip");
       secondCard.classList.remove("flip");
-      lockBoard = false;
+      resetBoard();
     }, 1000);
   }
 }
@@ -47,8 +47,8 @@ function resetBoard(){
 (function shuffle(){
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
-    car.style.order = random 
-  })
- })
+    card.style.order = randomPos;
+  });
+ })();
 
 cards.forEach(card => card.addEventListener('click',flipCard));
