@@ -10,17 +10,17 @@ body {
 }
 
 .memory-game {
-  width : 1040px;
+  width : 640px;
   height : 640px;
-  dispaly : flex;
+  display : flex;
   flex-wrap : wrap;
-  flex-direction : row;
   border : 2px solid lime;
 }
 
 .memory-card{
   border : 2px solid aqua;
   width : 25%;
+  height : 33.33%
 }
 
 .front-face,
@@ -28,6 +28,9 @@ body {
   border : 2px solid deeppink;
 }
 
-img {
+img{
   width : 100px;
+  height : 100px;
 }
+
+
