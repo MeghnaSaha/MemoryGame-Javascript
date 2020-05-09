@@ -26,6 +26,7 @@ function flipCard(){
     //match
     firstCard.removeEventListener('click',flipCard);
     secondCard.removeEventListener('click',flipCard);
+    resetBoard();
   }
   else{
     //not a match
@@ -39,7 +40,7 @@ function flipCard(){
 }
 
 function resetBoard(){
-  [hasFlipped, lockBoard] = [false, false];
+  [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
 
