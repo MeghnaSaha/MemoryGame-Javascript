@@ -19,10 +19,17 @@ body {
 }
 
 .memory-card{
-  border : 2px solid aqua;
-  width : 25%;
-  height : 33.33%
+  margin: 5px;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
   position : relative;
+  transform: scale(1);
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
 }
 
 .front-face,
@@ -30,13 +37,10 @@ body {
   position : absolute;
   width : 100%;
   height : 100%;
-  
-  border : 2px solid deeppink;
+  padding : 10px;
+  bborder-radius: 5px;
+  background: ;
 }
 
-img{
-  width : 100px;
-  height : 100px;
-}
 
 
